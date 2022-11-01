@@ -1,0 +1,323 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.35.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 1, 1, LIC=9WSKC-78UHA-WFNI7-EC3FY-84HUL-63SCK
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.35.0.2
+Toolchain Path:  F:\keil5\K5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.35.0.2
+Dialog DLL:      DARMSTM.DLL V1.68.0.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.9.0
+Dialog DLL:      TARMSTM.DLL V1.66.0.0
+ 
+<h2>Project:</h2>
+E:\diansai_code\UWB\BPHero_UWB_WIFI\Project\ds_twr_init\MDK-ARM\Project.uvprojx
+Project File Date:  09/03/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'F:\keil5\K5\ARM\ARMCC\Bin'
+Rebuild target 'ds_twr_init'
+compiling stm32f10x_it.c...
+compiling bh1750.c...
+compiling usart3.c...
+compiling waificmd.c...
+..\user\waificmd.c(34): warning:  #223-D: function "deca_sleep" declared implicitly
+  	delay_ms(100);
+..\user\waificmd.c(187): warning:  #223-D: function "deca_sleep" declared implicitly
+              delay_ms(10);
+..\user\waificmd.c(215): warning:  #223-D: function "deca_sleep" declared implicitly
+              delay_ms(10);
+..\user\waificmd.c: 3 warnings, 0 errors
+compiling user_tim.c...
+..\user\user_tim.c(113): warning:  #177-D: variable "bit_oc"  was declared but never referenced
+  	uint8_t bit_oc = 0;
+..\user\user_tim.c(340): warning:  #177-D: variable "GPIO_InitStructure"  was declared but never referenced
+      GPIO_InitTypeDef GPIO_InitStructure;
+..\user\user_tim.c(341): warning:  #177-D: variable "TIM_TimeBaseStructure"  was declared but never referenced
+      TIM_TimeBaseInitTypeDef  TIM_TimeBaseStructure;
+..\user\user_tim.c(342): warning:  #177-D: variable "TIM_OCInitStructure"  was declared but never referenced
+      TIM_OCInitTypeDef  TIM_OCInitStructure;
+..\user\user_tim.c(400): warning:  #223-D: function "SEGGER_RTT_printf" declared implicitly
+          SEGGER_RTT_printf(0, "<%s>[%d]\r\n\r\n",__func__,__LINE__);
+..\user\user_tim.c(427): warning:  #174-D: expression has no effect
+      TIM_CLEAN();
+..\user\user_tim.c(495): warning:  #188-D: enumerated type mixed with another type
+  	GPIO_WriteBit(GPIOB,GPIO_Pin_1,0);
+..\user\user_tim.c(502): warning:  #188-D: enumerated type mixed with another type
+  		    GPIO_WriteBit(GPIOB,GPIO_Pin_1,0);
+..\user\user_tim.c(506): warning:  #188-D: enumerated type mixed with another type
+  		    GPIO_WriteBit(GPIOB,GPIO_Pin_1,1);
+..\user\user_tim.c(25): warning:  #177-D: variable "gpio_bit"  was declared but never referenced
+  static uint8_t gpio_bit = 0;
+..\user\user_tim.c(131): warning:  #177-D: function "infrared_send_data"  was declared but never referenced
+  static void infrared_send_data(uint8_t data,uint8_t data_f){
+..\user\user_tim.c: 11 warnings, 0 errors
+compiling user_uwb.c...
+..\user\user_uwb.c(199): warning:  #177-D: variable "buff"  was declared but never referenced
+      uint8 buff[5];
+..\user\user_uwb.c(201): warning:  #550-D: variable "cnt"  was set but never used
+      int cnt ;
+..\user\user_uwb.c(335): warning:  #177-D: variable "final_distance"  was declared but never referenced
+      float final_distance = 0;
+..\user\user_uwb.c(720): warning:  #177-D: variable "rx_ant_delay"  was declared but never referenced
+      int rx_ant_delay =32880;
+..\user\user_uwb.c(721): warning:  #177-D: variable "index"  was declared but never referenced
+      int index = 0 ;
+..\user\user_uwb.c(776): warning:  #177-D: variable "coun_ary"  was declared but never referenced
+      static int coun_ary[100];
+..\user\user_uwb.c(777): warning:  #550-D: variable "coun_ary_c"  was set but never used
+      static uint8_t coun_ary_c;
+..\user\user_uwb.c(779): warning:  #177-D: variable "status"  was declared but never referenced
+      static uint8 status  = 0,TAG_ID_rx = 0;
+..\user\user_uwb.c(779): warning:  #177-D: variable "TAG_ID_rx"  was declared but never referenced
+      static uint8 status  = 0,TAG_ID_rx = 0;
+..\user\user_uwb.c(780): warning:  #177-D: variable "time_out"  was declared but never referenced
+      uint32_t time_out = 0,time_out_1 = 0;
+..\user\user_uwb.c(780): warning:  #177-D: variable "time_out_1"  was declared but never referenced
+      uint32_t time_out = 0,time_out_1 = 0;
+..\user\user_uwb.c(781): warning:  #177-D: variable "anthor_flag"  was declared but never referenced
+      static uint8_t anthor_flag = 0,print_count = 0;
+..\user\user_uwb.c(781): warning:  #177-D: variable "print_count"  was declared but never referenced
+      static uint8_t anthor_flag = 0,print_count = 0;
+..\user\user_uwb.c(782): warning:  #177-D: variable "anthor_index"  was declared but never referenced
+      uint8 anthor_index = 0;
+..\user\user_uwb.c(783): warning:  #177-D: variable "tag_index"  was declared but never referenced
+      uint8 tag_index = 0;
+..\user\user_uwb.c(785): warning:  #177-D: variable "frame_len"  was declared but never referenced
+      int frame_len = 0;
+..\user\user_uwb.c(45): warning:  #177-D: variable "rx_poll_msg"  was declared but never referenced
+  static uint8 rx_poll_msg[] =  {0x41, 0x88, 0, 0x0, 0xDE, 'W', 'A', 'V', 'E', 0x21, 0, 0};
+..\user\user_uwb.c(47): warning:  #177-D: variable "tx_resp_msg"  was declared but never referenced
+  static uint8 tx_resp_msg[] =  {0x41, 0x88, 0, 0x0, 0xDE, 'V', 'E', 'W', 'A', 0x10, 0x02, 0, 0, 0, 0};
+..\user\user_uwb.c(48): warning:  #177-D: variable "rx_final_msg"  was declared but never referenced
+  static uint8 rx_final_msg[] = {0x41, 0x88, 0, 0x0, 0xDE, 'W', 'A', 'V', 'E', 0x23, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+..\user\user_uwb.c(58): warning:  #177-D: variable "angle_msg"  was declared but never referenced
+  static uint8 angle_msg[] =    {0x41, 0x88, 0, 0x0, 0xDE, 'W', 'A', 'V', 'E', 0xFE, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+..\user\user_uwb.c(59): warning:  #177-D: variable "Semaphore_Release"  was declared but never referenced
+  static uint8 Semaphore_Release[] =    {0x41, 0x88, 0, 0x0, 0xDE, 'W', 'A', 'V', 'E', 0xE0, 0, 0, 0};
+..\user\user_uwb.c(60): warning:  #177-D: variable "Tag_Statistics"  was declared but never referenced
+  static uint8 Tag_Statistics[] =                      {0x41, 0x88, 0, 0x0, 0xDE, 'W', 'A', 'V', 'E', 0xE1, 0, 0, 0};
+..\user\user_uwb.c(61): warning:  #177-D: variable "Master_Release_Semaphore"  was declared but never referenced
+  static uint8 Master_Release_Semaphore[] =            {0x41, 0x88, 0, 0x0, 0xDE, 'W', 'A', 'V', 'E', 0xE2, 0, 0, 0};
+..\user\user_uwb.c(62): warning:  #177-D: variable "Tag_Statistics_response"  was declared but never referenced
+  static uint8 Tag_Statistics_response[] =             {0x41, 0x88, 0, 0x0, 0xDE, 'W', 'A', 'V', 'E', 0xE3, 0, 0, 0};
+..\user\user_uwb.c(63): warning:  #177-D: variable "Master_Release_Semaphore_comfirm"  was declared but never referenced
+  static uint8 Master_Release_Semaphore_comfirm[] =    {0x41, 0x88, 0, 0x0, 0xDE, 'W', 'A', 'V', 'E', 0xE4, 0, 0, 0};
+..\user\user_uwb.c(87): warning:  #177-D: variable "frame_seq_nb_semaphore"  was declared but never referenced
+  static uint8 frame_seq_nb_semaphore = 0;
+..\user\user_uwb.c(126): warning:  #177-D: variable "poll_rx_ts"  was declared but never referenced
+  static uint64 poll_rx_ts;
+..\user\user_uwb.c(127): warning:  #177-D: variable "resp_tx_ts"  was declared but never referenced
+  static uint64 resp_tx_ts;
+..\user\user_uwb.c(128): warning:  #177-D: variable "final_rx_ts"  was declared but never referenced
+  static uint64 final_rx_ts;
+..\user\user_uwb.c(140): warning:  #177-D: variable "tof"  was declared but never referenced
+  static double tof;
+..\user\user_uwb.c(141): warning:  #177-D: variable "distance"  was declared but never referenced
+  static double distance;
+..\user\user_uwb.c(609): warning:  #177-D: function "final_msg_get_ts"  was declared but never referenced
+  static void final_msg_get_ts(const uint8 *ts_field, uint32 *ts)
+..\user\user_uwb.c(151): warning:  #177-D: function "compute_angle_send_to_anthor0"  was declared but never referenced
+  static void compute_angle_send_to_anthor0(int distance1, int distance2, int distance3);
+..\user\user_uwb.c(152): warning:  #177-D: function "distance_mange"  was declared but never referenced
+  static void distance_mange(void);
+..\user\user_uwb.c(186): warning:  #550-D: variable "Semaphore_Enable"  was set but never used
+  static uint8 Semaphore_Enable = 0 ;
+..\user\user_uwb.c(187): warning:  #550-D: variable "Waiting_TAG_Release_Semaphore"  was set but never used
+  static uint8 Waiting_TAG_Release_Semaphore = 0;
+..\user\user_uwb.c: 36 warnings, 0 errors
+compiling main.c...
+..\main.c(187): warning:  #181-D: argument is incompatible with corresponding format string conversion
+              		  &u_data.head,&u_data.value,&u_data.object,&u_data.cmd,\
+..\main.c(187): warning:  #181-D: argument is incompatible with corresponding format string conversion
+              		  &u_data.head,&u_data.value,&u_data.object,&u_data.cmd,\
+..\main.c(187): warning:  #181-D: argument is incompatible with corresponding format string conversion
+              		  &u_data.head,&u_data.value,&u_data.object,&u_data.cmd,\
+..\main.c(345): warning:  #186-D: pointless comparison of unsigned integer with zero
+          			  if(user_menu.menustaus < 0 || user_menu.menustaus > 3)user_menu.menustaus = 3;
+..\main.c(96): warning:  #177-D: variable "lumi"  was declared but never referenced
+      int lumi = 0;//光照强度
+..\main.c(97): warning:  #177-D: variable "pdata"  was declared but never referenced
+      uint8_t Time_ns = 0,data_num = 0,i = 0,pdata[6],ddata = 0,time_200ms = 0,time_5ms = 0;
+..\main.c(97): warning:  #177-D: variable "ddata"  was declared but never referenced
+      uint8_t Time_ns = 0,data_num = 0,i = 0,pdata[6],ddata = 0,time_200ms = 0,time_5ms = 0;
+..\main.c(97): warning:  #177-D: variable "time_5ms"  was declared but never referenced
+      uint8_t Time_ns = 0,data_num = 0,i = 0,pdata[6],ddata = 0,time_200ms = 0,time_5ms = 0;
+..\main.c(98): warning:  #177-D: variable "data_arr"  was declared but never referenced
+      uint8_t data_arr[200];
+..\main.c: 9 warnings, 0 errors
+compiling lis2dh12_reg.c...
+..\user\lis2dh12_reg.c(2394): warning:  #1-D: last line of file ends without a newline
+  /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+..\user\lis2dh12_reg.c: 1 warning, 0 errors
+compiling lis2dh12.c...
+..\user\lis2dh12.c(197): warning:  #940-D: missing return statement at end of non-void function "drv_lis2dh12_init" 
+  }
+..\user\lis2dh12.c(238): warning:  #167-D: argument of type "int8_t *" is incompatible with parameter of type "uint8_t *"
+  		drv_lis2dh12_iic_read_byte(0x28 + i, data+i);		//获取X、y、z轴的数据
+..\user\lis2dh12.c(233): warning:  #177-D: variable "angle_x"  was declared but never referenced
+      float angle_x, angle_y, angle_z, angle_xyz;
+..\user\lis2dh12.c(233): warning:  #177-D: variable "angle_y"  was declared but never referenced
+      float angle_x, angle_y, angle_z, angle_xyz;
+..\user\lis2dh12.c(233): warning:  #177-D: variable "angle_xyz"  was declared but never referenced
+      float angle_x, angle_y, angle_z, angle_xyz;
+..\user\lis2dh12.c: 5 warnings, 0 errors
+compiling exit_user.c...
+..\user\exit_user.c(21): warning:  #177-D: variable "NVIC_InitStructure"  was declared but never referenced
+  	NVIC_InitTypeDef NVIC_InitStructure;
+..\user\exit_user.c(22): warning:  #177-D: variable "EXTI_InitStructure"  was declared but never referenced
+  	EXTI_InitTypeDef EXTI_InitStructure;
+..\user\exit_user.c(75): warning:  #2748-D: null argument provided for parameter marked with attribute "nonnull"
+  	printf(0, "<%s>[%d]<<%d>>tim_count:%d\r\n",__func__,__LINE__,count,user_menu.infrared_count);
+..\user\exit_user.c: 3 warnings, 0 errors
+compiling menu.c...
+..\user\menu.c(148): warning:  #550-D: variable "cmd"  was set but never used
+  				uint8_t cmd = 0;
+..\user\menu.c(212): warning:  #177-D: variable "x"  was declared but never referenced
+  		uint8_t x = 0,y = 0;
+..\user\menu.c: 2 warnings, 0 errors
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_gpio.c...
+compiling misc.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_sdio.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_i2c.c...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_bkp.c...
+compiling stm32f10x_crc.c...
+compiling stm32f10x_cec.c...
+compiling stm32f10x_can.c...
+compiling stm32f10x_dac.c...
+compiling stm32f10x_dbgmcu.c...
+compiling stm32f10x_iwdg.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_rtc.c...
+compiling stm32f10x_wwdg.c...
+compiling core_cm3.c...
+compiling stm32f10x_tim.c...
+compiling system_stm32f10x.c...
+compiling stm32_eval.c...
+compiling stm32_eval_spi_flash.c...
+compiling stm32_eval_i2c_tsensor.c...
+compiling stm3210e_eval_fsmc_sram.c...
+compiling stm32_eval_sdio_sd.c...
+assembling startup_stm32f10x_hd.s...
+compiling stm3210e_eval_lcd.c...
+compiling stm3210e_eval_fsmc_nand.c...
+compiling stm3210e_eval_fsmc_nor.c...
+compiling deca_mutex.c...
+compiling deca_sleep.c...
+compiling deca_spi.c...
+compiling lcd.c...
+compiling deca_params_init.c...
+compiling deca_range_tables.c...
+compiling port.c...
+..\platform\port.c(853): warning:  #223-D: function "putchar" declared implicitly
+          putchar(s[i]);
+..\platform\port.c: 1 warning, 0 errors
+compiling lcd_oled.c...
+..\platform\lcd_oled.c(250): warning:  #940-D: missing return statement at end of non-void function "hal_i2c1_send_data" 
+  }
+..\platform\lcd_oled.c(393): warning:  #223-D: function "printf" declared implicitly
+  			printf("SHT20_read_tem time out 03");
+..\platform\lcd_oled.c(463): warning:  #223-D: function "printf" declared implicitly
+  			printf(0,"SHT20_read_tem time out 03");
+..\platform\lcd_oled.c(598): warning:  #177-D: variable "i"  was declared but never referenced
+      uint8_t i,n;
+..\platform\lcd_oled.c(598): warning:  #177-D: variable "n"  was declared but never referenced
+      uint8_t i,n;
+..\platform\lcd_oled.c(686): warning:  #177-D: variable "i"  was declared but never referenced
+  	unsigned char c=0,i=0,Nom;
+..\platform\lcd_oled.c(774): warning:  #177-D: variable "t"  was declared but never referenced
+      uint8_t t,adder=0;
+..\platform\lcd_oled.c(774): warning:  #177-D: variable "adder"  was declared but never referenced
+      uint8_t t,adder=0;
+..\platform\lcd_oled.c(798): warning:  #177-D: variable "t"  was declared but never referenced
+  	u8 t,adder=0, wordNum;
+..\platform\lcd_oled.c(798): warning:  #177-D: variable "adder"  was declared but never referenced
+  	u8 t,adder=0, wordNum;
+..\platform\lcd_oled.c(48): warning:  #177-D: function "I2C_AcknowledgePolling"  was declared but never referenced
+  static void I2C_AcknowledgePolling(I2C_TypeDef *I2Cx,uint8_t I2C_Addr)
+..\platform\lcd_oled.c: 11 warnings, 0 errors
+compiling deca_device.c...
+..\decadriver\deca_device.c(1050): warning:  #68-D: integer conversion resulted in a change of sign
+      uint32  regval = DWT_ERROR ;
+..\decadriver\deca_device.c(1082): warning:  #68-D: integer conversion resulted in a change of sign
+      uint16  regval = DWT_ERROR ;
+..\decadriver\deca_device.c(1396): warning:  #68-D: integer conversion resulted in a change of sign
+          return DWT_ERROR;
+..\decadriver\deca_device.c(1530): warning:  #68-D: integer conversion resulted in a change of sign
+          return DWT_ERROR;
+..\decadriver\deca_device.c: 4 warnings, 0 errors
+compiling SEGGER_RTT.c...
+compiling SEGGER_RTT_printf.c...
+compiling kalman.c...
+compiling AT24C02.c...
+..\at24c16\AT24C02.c(341): warning:  #1-D: last line of file ends without a newline
+  }
+..\at24c16\AT24C02.c: 1 warning, 0 errors
+compiling matrix.c...
+compiling trilateration.c...
+..\trilateration\trilateration.c(534): warning:  #550-D: variable "solution_compare2"  was set but never used
+      vec3d   solution_compare1, solution_compare2;
+..\trilateration\trilateration.c(712): warning:  #223-D: function "printf" declared implicitly
+      printf("r1=%f , r2=%f, r3=%f,  r4=%f\r\n",r1,r2,r3,r4);
+..\trilateration\trilateration.c(815): warning:  #223-D: function "printf" declared implicitly
+      printf("TAG LOC:x = %f,y = %f\r\n",x0,y0);
+..\trilateration\trilateration.c(760): warning:  #550-D: parameter "use4thAnchor"  was set but never used
+  int GetLocation2(vec3d * best_solution,int use4thAnchor,vec3d * anchorArray,int * distanceArray)
+..\trilateration\trilateration.c(941): warning:  #223-D: function "abs" declared implicitly
+          if (abs(points_AC_0 - circles[2].r) < abs(points_AC_1 - circles[2].r))//cross_point[0]
+..\trilateration\trilateration.c(1047): warning:  #223-D: function "printf" declared implicitly
+  		printf("TAG LOC My:x = %3.2f,y = %3.2f\r\n",P_1,P_2);
+..\trilateration\trilateration.c(967): warning:  #550-D: variable "Location"  was set but never used
+      struct  point_t points[1],Location[1];;
+..\trilateration\trilateration.c(1085): warning:  #223-D: function "printf" declared implicitly
+  	printf("TAG LOC My1:x = %3.2f,y = %3.2f\r\n",resultPose.x,resultPose.y);
+..\trilateration\trilateration.c: 8 warnings, 0 errors
+linking...
+Program Size: Code=28536 RO-data=7008 RW-data=424 ZI-data=7864  
+FromELF: creating hex file...
+After Build - User command #1: fromelf.exe --bin -o "E:\diansai_code\UWB\BPHero_UWB_WIFI\Project\ds_twr_init\MDK-ARM\STM3210E-EVAL\STM3210E-EVAL.bin" "E:\diansai_code\UWB\BPHero_UWB_WIFI\Project\ds_twr_init\MDK-ARM\STM3210E-EVAL\STM3210E-EVAL.axf"
+".\STM3210E-EVAL\STM3210E-EVAL.axf" - 0 Error(s), 95 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.8.0.pack
+                ARM.CMSIS.5.8.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.5.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.3.0.pack
+                Keil.STM32F1xx_DFP.2.3.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_ds_twr_init
+  F:\keil5\K5\ARM\CMSIS\5.8.0\CMSIS\Core\Include
+  F:\keil5\K5\Keil\STM32F1xx_DFP\2.3.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.5.0
+Build Time Elapsed:  00:00:09
+</pre>
+</body>
+</html>
